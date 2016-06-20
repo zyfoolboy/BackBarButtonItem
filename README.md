@@ -7,3 +7,7 @@ UIImage *backButtonImage = [[UIImage imageNamed:@"iconfont-fanhui"] imageWithRen
 [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
 [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -backButtonImage.size.height*3) forBarMetrics:UIBarMetricsDefault];
 ```
+在设置图片的时候可能会出现图片拉伸的问题，如图:<br/>
+![](https://github.com/zyfoolboy/BackBarButtonItem/blob/master/BackBarButtonItem/BackBarButtonItem/Assets.xcassets/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-06-20%20%E4%B8%8B%E5%8D%8812.39.49.imageset/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-06-20%20%E4%B8%8B%E5%8D%8812.39.49.png)<br/>
+解决这个问题可以用到苹果提供的九切片技术(不了解的同学可以网上查一下)，设置图片空白部分为拉伸,返回箭头为原图显示就可以了。<br/>
+![](https://github.com/zyfoolboy/BackBarButtonItem/blob/master/BackBarButtonItem/BackBarButtonItem/Assets.xcassets/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-06-20%20%E4%B8%8B%E5%8D%8812.46.38.imageset/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-06-20%20%E4%B8%8B%E5%8D%8812.46.38.png)
