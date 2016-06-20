@@ -11,7 +11,7 @@ UIImage *backButtonImage = [[UIImage imageNamed:@"iconfont-fanhui"] imageWithRen
 ![](https://github.com/zyfoolboy/BackBarButtonItem/blob/master/BackBarButtonItem/BackBarButtonItem/Assets.xcassets/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-06-20%20%E4%B8%8B%E5%8D%8812.39.49.imageset/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-06-20%20%E4%B8%8B%E5%8D%8812.39.49.png)<br/>
 解决这个问题可以用到苹果提供的九切片技术(不了解的同学可以网上查一下)，设置图片空白部分为拉伸,返回箭头为原图显示就可以了。<br/>
 ![](https://github.com/zyfoolboy/BackBarButtonItem/blob/master/BackBarButtonItem/BackBarButtonItem/Assets.xcassets/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-06-20%20%E4%B8%8B%E5%8D%8812.46.38.imageset/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-06-20%20%E4%B8%8B%E5%8D%8812.46.38.png)<br/>
-如果对返回按钮的样式没有特殊要求，只是显示一个箭头的话，完全不需要使用这种方法，只需要设置BackBarButtonItem的title为空就可以：
+如果对返回按钮的图片没有特殊要求，只是显示一个箭头的话，完全不需要使用这种方法，只需要设置BackBarButtonItem的title为空就可以：
 ```
 UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
     temporaryBarButtonItem.title = @"";
@@ -19,3 +19,4 @@ self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
 [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];//设置返回箭头颜色
 ```
 效果如图:<br/>
+![](https://github.com/zyfoolboy/BackBarButtonItem/blob/master/BackBarButtonItem/BackBarButtonItem/Assets.xcassets/iconback.imageset/iconback.png)
