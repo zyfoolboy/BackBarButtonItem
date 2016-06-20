@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--AVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -16,13 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8b-Xj-82h">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <state key="normal" title="跳转"/>
+                                <connections>
+                                    <segue destination="hvE-p0-G5q" kind="show" id="Vt2-K1-8AK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I8b-Xj-82h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H6K-Tf-klN"/>
+                            <constraint firstItem="I8b-Xj-82h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vCh-By-hWd"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2hw-9R-yoQ"/>
+                    <navigationItem key="navigationItem" title="AVC" id="2hw-9R-yoQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="847" y="1078"/>
+        </scene>
+        <!--BVC-->
+        <scene sceneID="MzW-nd-Osy">
+            <objects>
+                <viewController title="BVC" id="hvE-p0-G5q" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lgz-vs-jO0"/>
+                        <viewControllerLayoutGuide type="bottom" id="eRy-Sy-5iS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SEf-ls-NMM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dal-cu-Iyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1561" y="1073"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UoP-bh-l2v">
