@@ -14,7 +14,7 @@ UIImage *backButtonImage = [[UIImage imageNamed:@"iconfont-fanhui"] imageWithRen
 如果对返回按钮的图片没有特殊要求，只是显示一个箭头的话，完全不需要使用这种方法，只需要设置BackBarButtonItem的title为空就可以：
 ```
 UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
-    temporaryBarButtonItem.title = @"";
+temporaryBarButtonItem.title = @"";
 self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
 [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];//设置返回箭头颜色
 ```
